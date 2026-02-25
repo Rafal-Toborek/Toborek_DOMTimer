@@ -12,7 +12,7 @@ function startTimer() {
     if (time === null) {
         time = setInterval(() => {
             seconds++;
-            display.textContent = seconds;
+            display.innerHTML = seconds;
         }, interval); 
     }
     console.log(interval);
@@ -29,5 +29,5 @@ function resetTimer() {
     clearInterval(time);
     time = null;
     seconds = 0;
-    display.textContent = seconds;
+    display.innerHTML = seconds;
 }
